@@ -1,0 +1,133 @@
+  * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: rgb(75, 58, 102);
+        color: rgb(32, 2, 4);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Playfair Display', serif;
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff1B5;
+        width: 450px;
+        min-height: 400px;
+        max-height: 500px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px gray;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .one {
+        margin-bottom: 20px;
+      }
+
+      input {
+        height: 40px;
+        width: 300px;
+        margin-right: 20px;
+        border-radius: 10px;
+        border-color: #a09e9e6a;
+        padding-left: 10px;
+        font-weight: bold;
+      }
+
+      .addTask {
+        height: 42px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: #43302e;
+        color: aliceblue;
+        border-color: #a09e9e6a;
+        font-size: smaller;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .left,
+      .right,
+      #topText {
+        padding: 5px;
+        margin: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #3a2c54;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .line {
+        width: 401px;
+        height: 2px;
+        background-color: #6965656a;
+        position: relative;
+        top: 150px;
+        left: 20px;
+        border-radius: 12px;
+      }
+
+      .three {
+        width: 400px;
+        height: 30px;
+        margin-top: auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      /*  FIXED TASK LIST */
+      .taskList {
+        max-height: 250px;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+
+      /*  FIXED OVERFLOW ISSUE */
+      .taskCard {
+        width: 100%;
+        box-sizing: border-box; /*  main fix */
+
+        min-height: 60px;
+        background-color: #fff;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: solid #8c84846a;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+
+        gap: 10px;
+      }
+
+      .pText {
+        flex: 1;
+        text-align: left;
+        margin-left: 10px;
+
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+
+      .checkBox {
+        width: 15px;
+        height: 15px;
+        accent-color: #43302e;
+      }
+
+      .del {
+        height: 40px;
+        width: 70px;
+        border-radius: 12px;
+        background-color: #43302e;
+        color: aliceblue;
+      }
