@@ -14,7 +14,7 @@ console.log("this is todo app");
       }
 
       function updateCompletedCount() {
-        CompNum.textContent = `${comp} task(s)`;
+        CompNum.textContent = `${comp} completed task(s)`;
       }
 
       updateTaskCount();
